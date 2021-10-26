@@ -30,8 +30,6 @@ export default function AllEventsPage(props) {
 
   export async function getStaticProps(){
     const featuredEvents = await getAllEvents();
-    console.log("🚀 ~ file: index.js ~ line 33 ~ getStaticProps ~ featuredEvents", featuredEvents)
-  
     return {
       props: {
         events: featuredEvents
